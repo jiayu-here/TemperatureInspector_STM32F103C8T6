@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Open CubeMX",
+      "type": "shell",
+      "command": "D:\\STM32Cube\\STM32CubeMX\\STM32CubeMX.exe",
+      "args": [
+        "${workspaceFolder}\\TemperatureInspector_STM32F103C8T6.ioc"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Open Keil Project",
+      "type": "shell",
+      "command": "D:\\Keil_v5\\UV4\\UV4.exe",
+      "args": [
+        "${workspaceFolder}\\MDK-ARM\\TemperatureInspector.uvprojx"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}
+

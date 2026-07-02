@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "*.h": "c",
+    "*.c": "c",
+    "*.ioc": "ini",
+    "*.uvprojx": "xml"
+  },
+  "C_Cpp.default.cStandard": "c11",
+  "C_Cpp.default.intelliSenseMode": "windows-gcc-arm",
+  "stm32cube-ide-core.configuration.productSTM32CubeMX.executablePath": "D:\\STM32Cube\\STM32CubeMX\\STM32CubeMX.exe"
+}
+

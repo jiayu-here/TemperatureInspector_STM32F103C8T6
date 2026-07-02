@@ -1,0 +1,43 @@
+# Build outputs
+*.o
+*.obj
+*.elf
+*.map
+*.lst
+*.bin
+*.axf
+*.dep
+*.d
+
+# Keep the ready-to-flash firmware image
+build_gcc/*
+!build_gcc/
+!build_gcc/TemperatureInspector.hex
+
+# Keil generated files
+**/Objects/
+**/Listings/
+*.uvguix.*
+*.uvoptx
+*.scvd
+*.htm
+
+# Editor/system files
+.DS_Store
+Thumbs.db
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+~$*
+
+# Unused STM32Cube middleware/examples not required by this project
+Drivers/CMSIS/Core/
+Drivers/CMSIS/Core_A/
+Drivers/CMSIS/DSP/
+Drivers/CMSIS/Lib/
+Drivers/CMSIS/NN/
+Drivers/CMSIS/RTOS/
+Drivers/CMSIS/RTOS2/
+Drivers/CMSIS/docs/
