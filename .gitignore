@@ -26,11 +26,18 @@ build_gcc/*
 .DS_Store
 Thumbs.db
 *.log
+*.kicad_prl
+~*.lck
 
 # Temporary files
 *.tmp
 *.bak
 ~$*
+*.pyc
+**/__pycache__/
+Hardware/KiCad/.history/
+Hardware/KiCad/tmp/
+Hardware/KiCad/.release_stage/
 
 # Unused STM32Cube middleware/examples not required by this project
 Drivers/CMSIS/Core/
