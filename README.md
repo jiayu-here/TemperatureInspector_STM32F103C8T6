@@ -40,6 +40,16 @@ Generated HEX file:
 build_gcc/TemperatureInspector.hex
 ~~~
 
+## Hardware Design
+
+The repository now includes a complete KiCad 10 schematic and four-layer PCB design. The board uses the pin-compatible `STM32F103CBT6` in LQFP-48, measures 100 mm x 80 mm, and implements the firmware pin map for the sensors, display, storage, alarms, ESP-01S, UART, and SWD interfaces.
+
+- Hardware guide and connector pinout: [`Hardware/KiCad/README_Hardware.md`](Hardware/KiCad/README_Hardware.md)
+- KiCad project: `Hardware/KiCad/TemperatureInspector_STM32F103C8T6_Hardware.kicad_pro`
+- Manufacturing outputs: `Hardware/KiCad/Manufacturing/`
+- Verification reports: `Hardware/KiCad/Verification/` (ERC 0 errors/warnings; DRC 0 violations)
+- Ready-to-share archives: `TemperatureInspector_STM32F103C8T6_KiCad_Project.zip` and `TemperatureInspector_STM32F103C8T6_Manufacturing.zip`
+
 ## Quick Start
 
 1. Complete wiring using the pin table in Docs/工程说明书.md.
@@ -71,6 +81,7 @@ Alarm confirmation: alarm after 2 consecutive out-of-range readings
 | Middlewares/Third_Party/FatFs/ | FatFs file-system source |
 | Drivers/ | STM32 HAL/CMSIS drivers |
 | Docs/ | Project manual, CubeMX configuration, and paper analysis |
+| Hardware/KiCad/ | KiCad schematic, PCB, previews, manufacturing files, and ERC/DRC reports |
 | build_gcc/ | GCC build output, including flashable HEX |
 | TemperatureInspector_STM32F103C8T6.ioc | CubeMX configuration file |
 
@@ -129,6 +140,16 @@ Docs/工程说明书.md
 build_gcc/TemperatureInspector.hex
 ~~~
 
+## 硬件设计
+
+仓库现已包含完整的 KiCad 10 原理图和四层 PCB。板上采用与当前固件引脚兼容的 LQFP-48 `STM32F103CBT6`，板框为 100 mm x 80 mm，已经实现传感器、显示、存储、报警、ESP-01S、串口和 SWD 等接口。
+
+- 硬件说明与接口针序：[`Hardware/KiCad/README_Hardware.md`](Hardware/KiCad/README_Hardware.md)
+- KiCad 工程：`Hardware/KiCad/TemperatureInspector_STM32F103C8T6_Hardware.kicad_pro`
+- 制造文件：`Hardware/KiCad/Manufacturing/`
+- 检查报告：`Hardware/KiCad/Verification/`（ERC 0 错误/警告，DRC 0 违规）
+- 可直接交付的压缩包：`TemperatureInspector_STM32F103C8T6_KiCad_Project.zip`、`TemperatureInspector_STM32F103C8T6_Manufacturing.zip`
+
 ## 快速使用
 
 1. 按 Docs/工程说明书.md 的引脚表完成接线。
@@ -160,6 +181,7 @@ PT 默认报警阈值：低于 0 C 或高于 100 C
 | Middlewares/Third_Party/FatFs/ | FatFs 文件系统源码 |
 | Drivers/ | STM32 HAL/CMSIS 驱动 |
 | Docs/ | 工程说明、CubeMX 配置、论文分析 |
+| Hardware/KiCad/ | KiCad 原理图、PCB、预览图、制造文件和 ERC/DRC 报告 |
 | build_gcc/ | GCC 编译输出，含可烧录 HEX |
 | TemperatureInspector_STM32F103C8T6.ioc | CubeMX 配置文件 |
 
